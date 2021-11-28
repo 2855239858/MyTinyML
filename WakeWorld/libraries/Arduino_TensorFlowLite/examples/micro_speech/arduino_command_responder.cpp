@@ -56,7 +56,7 @@ void RespondToCommand(tflite::ErrorReporter* error_reporter,
       digitalWrite(LEDG, LOW);  // Green for yes
     }
 
-    if (found_command[0] == 'o') {
+    if (found_command[0] == 'o' && found_command[1] == 'f') {
       last_command_time = current_time;
       digitalWrite(LEDR, LOW);  // Red for no
     }
